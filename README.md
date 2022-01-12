@@ -7,10 +7,28 @@ In this guide, you will learn how to use Google Authenticator to implement Time 
 
 We will be using [this package](https://github.com/antonioribeiro/google2fa) to implement the [Google Two-Factor Authentication](https://github.com/antonioribeiro/google2fa) on our Laravel Application....**[Read More](https://dev.to/roxie/how-to-add-google-s-two-factor-authentication-to-a-laravel-8-application-4jjp)**
 
+## How To Use This?
+
+Download or clone this repo
+```shell
+$ git clone https://github.com/anandang76/laravel-8-google-2fa
+```
+
 ## Installation
 
-- `composer require eusebiu/laravel-spark-google2fa`
-- `php artisan vendor:publish --provider="Eusebiu\LaravelSparkGoogle2FA\Google2FAServiceProvider" --force`
-- `php artisan migrate`
-- `npm run dev`
 
+Install all dependency required by Laravel.
+```shell
+$ composer install
+```
+
+Generate app key, configure `.env` file and do migration.
+```shell
+# create copy of .env
+$ cp .env.example .env
+
+# create Laravel key
+$ php artisan key:generate
+
+# run migration
+$ php artisan migrate
