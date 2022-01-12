@@ -17,7 +17,7 @@
                  
                     <p>Take note of the <strong>OTP</strong> generated on your Authenticator App.You will be unable to login otherwise </p>
                     <div>
-                        <a href="/complete-registration"><button class="btn-primary">Finish Registration</button></a>
+                        <a href="complete-registration"><button class="btn-primary">Finish Registration</button></a>
                     </div>
                 </div>
             </div>
