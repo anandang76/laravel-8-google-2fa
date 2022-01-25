@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="app">
@@ -42,13 +43,14 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="{{ route('login') }}" >{{ __('Login') }}</a>
+                                    <a class="nav-link text-dark" href="{{ route('login') }}" ><i class="fa fa-sign-in" aria-hidden="true"></i> {{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link text-dark" href="{{ route('register') }}"> <i class="fa fa-user-plus" aria-hidden="true"></i>
+ {{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
