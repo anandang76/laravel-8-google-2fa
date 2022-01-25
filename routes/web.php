@@ -28,6 +28,10 @@ Route::post('2fa', function () {
 })->name('2fa')->middleware('2fa');
 
 
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    return "Cache is cleared";
+});
 
 
 
